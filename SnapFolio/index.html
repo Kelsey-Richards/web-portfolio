@@ -14,8 +14,8 @@
   <meta name="description" content="Professional web portfolio for Kelsey Richards, an Application and Web Development student.">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.ico" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/favicon/favicon.ico" rel="icon">
+  <link href="assets/favicon/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -50,8 +50,8 @@
         </ul>
       </nav>
       <div class="social-links text-center">
-        <a href="#" class="github"><i class="bi bi-github"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Kelsey-Richards" class="github"><i class="bi bi-github" aria-hidden="true"></i><span class="visually-hidden">GitHub profile</span></a>
+        <a href="https://www.linkedin.com/in/kelsey-richards" class="linkedin"><i class="bi bi-linkedin" aria-hidden="true"></i><span class="visually-hidden">LinkedIn profile</span></a>
       </div>
     </div>
   </header>
@@ -72,7 +72,7 @@
             </div>
           </div>
           <div class="col-lg-5 text-center">
-            <img src="assets/img/profile/profile-square-2.webp" class="img-fluid rounded shadow" alt="Professional headshot placeholder">
+            <img src="assets/img/profile/logo.png" class="img-fluid rounded shadow" alt="Professional headshot placeholder">
           </div>
         </div>
       </div>
@@ -87,19 +87,61 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 align-items-center">
           <div class="col-lg-4 text-center">
-            <img src="assets/img/person/person-f-7.webp" class="img-fluid rounded" alt="Professional image placeholder">
+            <img src="assets/img/profile/desk.jpg" class="img-fluid rounded desk" alt="animated girl coding illustration placeholder">
           </div>
           <div class="col-lg-8">
-            <h3>Future Web Developer</h3>
-            <p>I'm Kelsey Richards, an Application and Web Development student with a passion for learning how websites and software are built.</p>
-            <p>I've worked on a variety of projects using HTML, CSS, Bootstrap, JavaScript, and C#. I enjoy creating responsive websites, solving programming challenges, and improving my technical skills through hands-on experience.</p>
+            <h3 class="subtitle">Future Web Developer</h3>
+            <p>Welcome! I'm Kelsey Richards, an Application and Web Development student with a passion for learning how websites and software are built.</p>
+            <p>I'm continually expanding my skills in HTML, CSS, Bootstrap, JavaScript, C#, SQL, and GitHub through coursework and personal projects.</p>
+            <p>My goal is to become a front-end or full-stack developer while continuing to grow as a programmer.</p>
+
             <div class="row mt-4">
-              <div class="col-md-6"><strong>Email:</strong> kelseyrichards714@gmail.com</div>
-              <div class="col-md-6"><strong>Location:</strong> St. Louis, Missouri Area</div>
+
+              <!-- Email -->
+                <div class="col-md-6">
+                  <div class="info-card">
+                    <i class="bi bi-envelope-fill"></i>
+                    <div>
+                      <h6>Email</h6>
+                      <p>kelseyrichards714@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="info-card">
+                    <i class="bi bi-geo-alt-fill"></i>
+                      <div>
+                        <h6>Location</h6>
+                        <p>St. Louis, Missouri</p>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="info-card">
+                    <i class="bi bi-mortarboard-fill"></i>
+                      <div>
+                        <h6>Education</h6>
+                        <p>Ranken Technical College</p>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="info-card">
+                    <i class="bi bi-code-slash"></i>
+                    <div>
+                      <h6>Focus</h6>
+                      <p>Application &amp; Web Development</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- Resume Section -->
@@ -112,27 +154,32 @@
         <div class="text-center mb-4">
           <a href="assets/files/resume.pdf" class="btn btn-primary" download><i class="bi bi-download"></i> Download Resume</a>
         </div>
-        <div class="row gy-4">
+       <div class="row g-4">
           <div class="col-lg-6">
-            <div class="card h-100 p-4">
-              <h3>Education</h3>
-              <h5>Ranken Technical College</h5>
-              <p><strong>Associate Degree in Application &amp; Web Development</strong></p>
-              <p>Relevant coursework includes responsive web design, HTML, CSS, Bootstrap, JavaScript, C#, database concepts, and application development.</p>
+            <div class="resume-card h-100">
+              <p class="section-label">Education</p>
+              <h3>Associate Degree in Application &amp; Web Development</h3>
+              <p>
+                Relevant coursework includes responsive web design, HTML, CSS,
+                Bootstrap, JavaScript, C#, database concepts, and application development.
+              </p>
             </div>
           </div>
+
           <div class="col-lg-6">
-            <div class="card h-100 p-4">
-              <h3>Skills</h3>
-              <div class="d-flex flex-wrap gap-2">
-                <span class="badge text-bg-primary">HTML5</span>
-                <span class="badge text-bg-primary">CSS3</span>
-                <span class="badge text-bg-primary">Bootstrap 5</span>
-                <span class="badge text-bg-primary">JavaScript</span>
-                <span class="badge text-bg-primary">C#</span>
-                <span class="badge text-bg-primary">SQL</span>
-                <span class="badge text-bg-primary">GitHub</span>
-                <span class="badge text-bg-primary">Responsive Design</span>
+            <div class="resume-card h-100">
+              <p class="section-label">Technical Skills</p>
+              <h3>Tools &amp; Technologies</h3>
+
+              <div class="skill-badges">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Bootstrap 5</span>
+                <span>JavaScript</span>
+                <span>C#</span>
+                <span>SQL</span>
+                <span>GitHub</span>
+                <span>Responsive Design</span>
               </div>
             </div>
           </div>
@@ -243,7 +290,7 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email</h3>
-                <p>kelseyrichards714@gmail.com</p>
+                <a href="mailto:kelseyrichards714@gmail.com">kelseyrichards714@gmail.com</a>
               </div>
             </div>
             <div class="info-item d-flex">
@@ -281,8 +328,8 @@
       <h3 class="sitename">Kelsey Richards</h3>
       <p>Application &amp; Web Development Student</p>
       <div class="social-links d-flex justify-content-center">
-        <a href="#"><i class="bi bi-github"></i></a>
-        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Kelsey-Richards" target="_blank"><i class="bi bi-github"></i><span class="visually-hidden">GitHub Profile</span></a>
+        <a href="https://www.linkedin.com/in/kelsey-richards-147b7b164/" target="_blank"><i class="bi bi-linkedin"></i><span class="visually-hidden">LinkedIn Profile</span></a>
       </div>
       <div class="copyright mt-3">
         <span>&copy; 2026</span> <strong class="px-1 sitename">Kelsey Richards</strong> <span>All Rights Reserved</span>
@@ -290,7 +337,7 @@
     </div>
   </footer>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i><span class="visually-hidden">Scroll to top</span></a>
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->

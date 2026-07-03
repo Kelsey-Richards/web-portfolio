@@ -22,17 +22,17 @@
   --background-color: #1f1f1f; /* Background color for the entire website, including individual sections */
   --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ececec; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #4e51ff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #232323; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #310606; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --contrast-color: #fff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: rgba(236, 236, 236, 0.59);  /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #393939; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #393939; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-mobile-background-color: #f7ecec; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #fcf7f7; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #ffffff; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #ececec; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
@@ -1116,6 +1116,60 @@ section,
 .about .cta-section .btn.btn-outline:hover {
   border-color: var(--accent-color);
   transform: translateY(-2px);
+} 
+
+.about img{
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,.3);
+    border:1px solid rgba(255,255,255,.1);
+    max-width: 380px;
+    width: 100%;
+}
+
+.subtitle{
+    color:#4e51ff;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:700;
+    font-size:.85rem;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 18px 20px;
+
+    background: rgba(255,255,255,.05);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 15px;
+
+    transition: .3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.info-card i {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+}
+
+.info-card h6 {
+    margin: 0;
+    color: white;
+    font-weight: 700;
+}
+
+.info-card p {
+    margin: 0;
+    color: rgba(255,255,255,.75);
+    font-size: .95rem;
 }
 
 /*--------------------------------------------------------------
@@ -1504,6 +1558,56 @@ section,
 .resume .resume-section .resume-item p {
   color: var(--default-color);
   margin-bottom: 0;
+}
+
+.resume-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  border-left: 5px solid #4e51ff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.resume-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.section-label {
+  color: #f1f8f0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.skill-badges span {
+  background: #4e51ff;
+  color: white;
+  padding: 0.55rem 0.9rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.resume-card h3 {
+  color: #212529;
+}
+
+.resume-card p {
+  color: #212529;
+}
+
+.resume-card .section-label {
+  color: #4e51ff;
 }
 
 @media (max-width: 991.98px) {
@@ -2545,6 +2649,13 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+.btn {
+  background-color: #4e51ff;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn:hover {
+  background-color: #a1a2f3;
+  border-color: #fff;
 }
