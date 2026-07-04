@@ -46,8 +46,8 @@
 
 .dark-background {
   --background-color: #040b14;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
+  --default-color: #4e51ff;
+  --heading-color: #ffffff00;
   --surface-color: #151f2b;
   --contrast-color: #ffffff;
 }
@@ -2731,4 +2731,50 @@ section,
 .portfolio .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 18px 35px rgba(0,0,0,.25);
+}
+
+.contact .info-item {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: .3s;
+}
+
+.contact .info-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+}
+
+.contact .info-item i {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+}
+
+.contact-card {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 18px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 45px rgba(0,0,0,.35);
+  max-width: 550px;
+}
+
+.contact-card h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.contact-card p {
+  color: rgba(255,255,255,.8);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.contact-card .btn {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.85rem;
+  font-weight: 600;
 }
